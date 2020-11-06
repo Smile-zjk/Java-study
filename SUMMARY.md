@@ -1,9 +1,10 @@
 # Table of contents
 
-* [JAVA](README.md)
-* [多态](polymorphism.md)
-* [DI依赖注入环境](di-yi-lai-zhu-ru-huan-jing.md)
-* [Autowire](automatic-assembly-of-beans.md)
+## JAVA
+
+* [多态](java/polymorphism.md)
+* [DI依赖注入环境](java/di-yi-lai-zhu-ru-huan-jing.md)
+* [Autowire](java/automatic-assembly-of-beans.md)
 
 ## SQL
 
