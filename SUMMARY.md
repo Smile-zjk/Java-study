@@ -1,12 +1,11 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [JAVA](README.md)
+* [多态](polymorphism.md)
+* [DI依赖注入环境](di-yi-lai-zhu-ru-huan-jing.md)
+* [Autowire](automatic-assembly-of-beans.md)
 
-* [多态](notes/Polymorphism.md)
+## SQL
 
-* [DI依赖注入环境](notes/di-yi-lai-zhu-ru-huan-jing.md)
-
-* [Autowire](notes/Automatic-assembly-of-beans.md)
-
-  
+* [SQL DML 和 DDL](sql/sql-dml-he-ddl.md)
 
