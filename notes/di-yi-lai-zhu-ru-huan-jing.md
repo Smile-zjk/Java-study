@@ -179,3 +179,30 @@ xmlns:p="http://www.springframework.org/schema/p"
 
 
 ### 3 拓展方式
+
+
+
+### 4 bean的作用域
+
+| Scope       | Description                                                  |
+| :---------- | :----------------------------------------------------------- |
+| singleton   | (Default) Scopes a single bean definition to a single object instance for each Spring IoC container. |
+| prototype   | Scopes a single bean definition to any number of object instances. |
+| request     | Scopes a single bean definition to the lifecycle of a single HTTP request. That is, each HTTP request has its own instance of a bean created off the back of a single bean definition. Only valid in the context of a web-aware Spring `ApplicationContext`. |
+| session     | Scopes a single bean definition to the lifecycle of an HTTP `Session`. Only valid in the context of a web-aware Spring `ApplicationContext`. |
+| application | Scopes a single bean definition to the lifecycle of a `ServletContext`. Only valid in the context of a web-aware Spring `ApplicationContext`. |
+| websocket   | Scopes a single bean definition to the lifecycle of a `WebSocket`. Only valid in the context of a web-aware Spring `ApplicationContext`. |
+
+1. 单例模式（Spring默认机制）
+
+```xml
+<bean id="user" class="com.casuall.pojo.User" scope="singleton"/>
+```
+
+2. 原型模式：每次从容器中get的时候，都会产生一个新对象
+
+```xml
+<bean id="accountService" class="com.something.DefaultAccountService" scope="prototype"/>
+```
+
+3. 其余的request、session、application这些只能在web开发中使用到！
