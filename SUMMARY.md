@@ -11,8 +11,9 @@
 * [设计模式](java/design-patterns)
   * [面向对象七大原则](java/pattern/oop7principle.md)
   * [代理模式](java/pattern/dai-li-mo-shi.md)
-  * [工厂](java/pattern/factor.md)
-* [线程](java/thread/thread.md)
+  * [工厂](java/pattern/factory.md)
+* 线程
+  * [线程](java/thread/thread.md)
 * Spring
   * [DI依赖注入环境](java/spring/di-yi-lai-zhu-ru-huan-jing.md)
   * [Autowire](java/spring/automatic-assembly-of-beans.md)
