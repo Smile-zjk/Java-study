@@ -2,20 +2,21 @@
 
 ## JAVA
 
-* [多态](java/polymorphism.md)
-* [static关键字](java/static.md)
-* [接口](java/interface.md)
-* [包](java/package.md)
-* [多态](java/polymorphism.md)
-* [线程](java/thread.md)
-* [面向对象七大原则](java/oop7principle.md)
-* [代理模式](java/dai-li-mo-shi.md)
-* [工厂](java/factor.md)
+* 面向对象
+  * [多态](java/oop/polymorphism.md)
+  * [static关键字](java/oop/static.md)
+  * [接口](java/oop/interface.md)
+  * [包](java/oop/package.md)
+  * [抽象类](java/oop/abstract.md)
 * [设计模式](java/design-patterns)
-* [抽象类](java/abstract.md)
-* [DI依赖注入环境](java/di-yi-lai-zhu-ru-huan-jing.md)
-* [Autowire](java/automatic-assembly-of-beans.md)
-* [AOP](java/aop.md)
+  * [面向对象七大原则](java/pattern/oop7principle.md)
+  * [代理模式](java/pattern/dai-li-mo-shi.md)
+  * [工厂](java/pattern/factor.md)
+* [线程](java/thread/thread.md)
+* Spring
+  * [DI依赖注入环境](java/spring/di-yi-lai-zhu-ru-huan-jing.md)
+  * [Autowire](java/spring/automatic-assembly-of-beans.md)
+  * [AOP](java/spring/aop.md)
 
 ## SQL
 
