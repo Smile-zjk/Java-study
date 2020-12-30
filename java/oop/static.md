@@ -45,3 +45,39 @@ public class MyTest {
 
 ```
 
+## 静态内部类和非静态内部类区别
+
+1. **静态内部类**进行实例化的时候不需要先实例化其外部类。
+
+2. **静态内部类**是独立类，拥有外部类的`private`访问权限，但是只能访问外部类的静态成员。
+
+   ```java
+   public class Hello {
+       class Person{
+           private String name;
+           public Person(String name) {
+               this.name = name;
+           }
+           
+       }
+   
+       static class Teacher{
+           private String name;
+           public Teacher(String name) {
+               this.name = name;
+           }
+       }
+   
+       public static void main(String[] args) {
+           // 不能通过 new Person的形式实例化内部类，需要先实例化一个外部类
+           Hello hello = new Hello();
+           //也可以用Person person = hello.new Person("inner class");
+           //但最好还是加上外部类的类名，结构层次比较清楚，不容易出错
+           Hello.Person person = hello.new Person("inner class");
+           Hello.Teacher teacher = new Teacher("static class");
+         
+       }
+   }
+   ```
+
+   

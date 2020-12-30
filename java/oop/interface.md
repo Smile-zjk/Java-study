@@ -14,7 +14,9 @@
 
 一个类可以实现多个`interface`
 
-接口中的所以定义的方法其实都是**抽象的**  public abstract
+接口中的所以定义的方法其实都是**抽象的**  `public abstract`（只能是`public abstract`，其他修饰符都会报错）
+
+接口中可以含有变量，但是接口中的变量会被隐式的指定为`public static final`变量（并且只能是`public`，用`private`修饰会报编译错误）。
 
 抽象类和接口的对比如下：
 
